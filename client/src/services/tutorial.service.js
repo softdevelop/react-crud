@@ -26,7 +26,8 @@ class TutorialDataService {
   }
 
   findByTitle(title) {
-    return http.get(`/tutorials?title=${title}`);
+    return http.get(`/tutorials?q=${title}`);
+    //return http.get(`/tutorials?title_like=${title}`);
   }
 }
 
